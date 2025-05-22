@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_final_flutter/login.dart';
+import 'package:projeto_final_flutter/view/homepage.dart';
+import 'package:projeto_final_flutter/view/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,15 +9,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Projeto Final - GymGuru',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black, secondary: Colors.black, primary: Colors.black),
+        fontFamily: 'BreeSerif', 
       ),
-      home: Login(),
+      home: Homepage(),
     );
   }
 }

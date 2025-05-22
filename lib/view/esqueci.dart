@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
-import 'package:projeto_final_flutter/login.dart';
+import 'package:projeto_final_flutter/view/login.dart';
 
 class EsqueciSenha extends StatefulWidget {
   const EsqueciSenha({super.key});

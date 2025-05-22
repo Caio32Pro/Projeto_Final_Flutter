@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:projeto_final_flutter/homepage.dart';
-import 'package:projeto_final_flutter/login.dart';
-import 'package:projeto_final_flutter/perfil.dart';
-import 'package:projeto_final_flutter/sobre.dart';
+import 'package:projeto_final_flutter/view/homepage.dart';
+import 'package:projeto_final_flutter/view/login.dart';
+import 'package:projeto_final_flutter/view/perfil.dart';
+import 'package:projeto_final_flutter/view/sobre.dart';
 
 class Treino extends StatefulWidget {
   const Treino({super.key});
@@ -25,7 +25,7 @@ class _TreinoState extends State<Treino> {
       appBar: AppBar(
         backgroundColor: Color(0xFF3E3E3E),
         title: Text(
-          'Treino Diário',
+          'Busca de Exercícios',
           style: TextStyle(color: Colors.white, fontSize: 25),
         ),
         centerTitle: true,
@@ -34,7 +34,6 @@ class _TreinoState extends State<Treino> {
           child: Container(color: Color.fromARGB(255, 0, 0, 0), height: 1.0),
         ),
       ),
-
       drawer: Drawer(
         backgroundColor: Color(0xFF3E3E3E),
         child: ListView(
@@ -54,7 +53,7 @@ class _TreinoState extends State<Treino> {
               ),
             ),
             ListTile(
-              title: Text('Ajuda', style: TextStyle(color: Colors.white)),
+              title: Text('Sobre', style: TextStyle(color: Colors.white)),
               leading: Icon(Icons.help, color: Colors.white),
               onTap: () {
                 Navigator.push(
@@ -100,17 +99,19 @@ class _TreinoState extends State<Treino> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.fitness_center),
-            label: 'Exercícios',
+            label: 'Busca',
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home), 
+            label: 'Home'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person), 
+            label: 'Equipe'),
         ],
       ),
-
       body: Center(
         child: Column(
-          children: [
-          ],
+          children: [],
         ),
       ),
     );

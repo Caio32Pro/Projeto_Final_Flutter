@@ -1,11 +1,11 @@
-import 'package:projeto_final_flutter/cadastrar.dart';
-import 'package:projeto_final_flutter/esqueci.dart';
-import 'package:projeto_final_flutter/usuario.dart';
-import 'package:projeto_final_flutter/remember_me_controller.dart';
+import 'package:projeto_final_flutter/view/cadastrar.dart';
+import 'package:projeto_final_flutter/view/esqueci.dart';
+import 'package:projeto_final_flutter/model/usuario.dart';
+import 'package:projeto_final_flutter/controller/remember_me_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:projeto_final_flutter/homepage.dart';
+import 'package:projeto_final_flutter/view/homepage.dart';
 
 bool isHidden = true;
 
@@ -101,7 +101,7 @@ class LoginState extends State<Login> {
           child: Column(
             children: [
               SizedBox(height: screenHeight * 0.1),
-              Image.asset('assets/images/iconepng.png', width: screenWidth * 0.5),
+              Image.asset('images/iconepng.png', width: screenWidth * 0.5),
               SizedBox(height: 20),
               Text(
                 'Login',

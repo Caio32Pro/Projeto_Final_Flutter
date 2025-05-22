@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:projeto_final_flutter/login.dart';
+import 'package:projeto_final_flutter/view/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 bool isHidden = true;
@@ -83,7 +83,7 @@ class _CadastroState extends State<Cadastro> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset('assets/images/iconepng.png', width: screenWidth * 0.5),
+              Image.asset('images/iconepng.png', width: screenWidth * 0.5),
               SizedBox(height: 20),
               SizedBox(height: 20),
               SizedBox(
