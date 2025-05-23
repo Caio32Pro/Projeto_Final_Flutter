@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dots_indicator/dots_indicator.dart';
 import 'package:projeto_final_flutter/view/homepage.dart';
 import 'package:projeto_final_flutter/view/login.dart';
 import 'package:projeto_final_flutter/view/perfil.dart';
@@ -111,7 +108,9 @@ class _TreinoState extends State<Treino> {
       ),
       body: Center(
         child: Column(
-          children: [],
+          children: [
+             
+          ],
         ),
       ),
     );
