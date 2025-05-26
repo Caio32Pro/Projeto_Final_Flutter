@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_final_flutter/view/exercicio.dart';
+import 'package:projeto_final_flutter/view/busca.dart';
 import 'package:projeto_final_flutter/view/login.dart';
-import 'package:projeto_final_flutter/view/perfil.dart';
+import 'package:projeto_final_flutter/view/equipe.dart';
 import 'package:projeto_final_flutter/view/sobre.dart';
 
 class Homepage extends StatefulWidget {

@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:projeto_final_flutter/view/exercicio.dart';
+import 'package:projeto_final_flutter/view/busca.dart';
 import 'package:projeto_final_flutter/view/homepage.dart';
 import 'package:projeto_final_flutter/view/login.dart';
 import 'package:projeto_final_flutter/view/sobre.dart';
