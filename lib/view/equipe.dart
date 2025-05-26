@@ -25,13 +25,16 @@ class _PerfilState extends State<Perfil> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: Color(0xFF3E3E3E),
       appBar: AppBar(
         backgroundColor: Color(0xFF3E3E3E),
         title: Text(
           "Equipe",
-          style: TextStyle(fontSize: 30, color: Colors.white),
+          style: TextStyle(fontSize: screenWidth * 0.08, color: Colors.white),
         ),
         centerTitle: true,
       ),
@@ -48,13 +51,19 @@ class _PerfilState extends State<Perfil> {
                   'GymGuru',
                   style: TextStyle(
                     color: const Color.fromARGB(255, 255, 255, 255),
-                    fontSize: 24,
+                    fontSize: screenWidth * 0.06,
                   ),
                 ),
               ),
             ),
             ListTile(
-              title: Text('Sobre', style: TextStyle(color: Colors.white)),
+              title: Text(
+                'Sobre',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: screenWidth * 0.045,
+                ),
+              ),
               leading: Icon(Icons.help, color: Colors.white),
               onTap: () {
                 Navigator.push(
@@ -64,7 +73,13 @@ class _PerfilState extends State<Perfil> {
               },
             ),
             ListTile(
-              title: Text('Sair', style: TextStyle(color: Colors.white)),
+              title: Text(
+                'Sair',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: screenWidth * 0.045,
+                ),
+              ),
               leading: Icon(Icons.exit_to_app, color: Colors.white),
               onTap: () {
                 Navigator.push(
@@ -152,16 +167,18 @@ class _PerfilState extends State<Perfil> {
                                 onPageChanged: (index, reason) {
                                   onPageChanged(index);
                                 },
-                                autoPlayAnimationDuration: Duration(milliseconds: 400),
+                                autoPlayAnimationDuration: Duration(
+                                  milliseconds: 400,
+                                ),
                               ),
                               items: [
                                 Column(
                                   children: [
                                     SizedBox(height: 100),
                                     CircleAvatar(
-                                      radius: 100,
+                                      radius: screenWidth * 0.25,
                                       backgroundImage: AssetImage(
-                                        'images/FotoCaio.png',
+                                        'assets/images/FotoCaio.png',
                                       ),
                                     ),
                                     SizedBox(height: 50),
@@ -169,14 +186,28 @@ class _PerfilState extends State<Perfil> {
                                       'Caio Franco',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 45,
+                                        fontSize: screenWidth * 0.07,
                                       ),
                                     ),
                                     Text(
                                       'caio32823@gmail.com',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: screenWidth * 0.04,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: screenWidth * 0.05,
+                                        vertical: 10,
+                                      ),
+                                      child: Text(
+                                        'Técnico em Desenvolvimento de sistemas pelo COTIL, é responsável, fundamentalmente, pela aplicação mobile do projeto "Gym-Guru" além de auxiliar no desenvolvimento da aplicação web, documentação e implementação do banco de dados.',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: screenWidth * 0.035,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -185,9 +216,9 @@ class _PerfilState extends State<Perfil> {
                                   children: [
                                     SizedBox(height: 100),
                                     CircleAvatar(
-                                      radius: 100,
+                                      radius: screenWidth * 0.25,
                                       backgroundImage: AssetImage(
-                                        'images/FotoDanilo.png',
+                                        'assets/images/FotoDanilo.png',
                                       ),
                                     ),
                                     SizedBox(height: 50),
@@ -195,14 +226,28 @@ class _PerfilState extends State<Perfil> {
                                       'Danilo Pereira',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 45,
+                                        fontSize: screenWidth * 0.07,
                                       ),
                                     ),
                                     Text(
                                       'cl203310@g.unicamp.br',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: screenWidth * 0.04,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: screenWidth * 0.05,
+                                        vertical: 10,
+                                      ),
+                                      child: Text(
+                                        'Técnico em Desenvolvimento de Sistemas, responsável pelo desktop do projeto. Programador em C# e C++. Exerce também a função de analista de requisitos, ajudando na documentação do projeto.',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: screenWidth * 0.035,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -211,9 +256,9 @@ class _PerfilState extends State<Perfil> {
                                   children: [
                                     SizedBox(height: 100),
                                     CircleAvatar(
-                                      radius: 100,
+                                      radius: screenWidth * 0.25,
                                       backgroundImage: AssetImage(
-                                        'images/FotoLucas.png',
+                                        'assets/images/FotoLucas.png',
                                       ),
                                     ),
                                     SizedBox(height: 50),
@@ -221,14 +266,28 @@ class _PerfilState extends State<Perfil> {
                                       'Lucas Henrique',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 45,
+                                        fontSize: screenWidth * 0.07,
                                       ),
                                     ),
                                     Text(
                                       'lucashenriquedejesus98@gmail.com',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: screenWidth * 0.04,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: screenWidth * 0.05,
+                                        vertical: 10,
+                                      ),
+                                      child: Text(
+                                        'Aluno do ensino médio integrado ao ensino técnico de desenvolvimento de sistemas no COTIL, responsável principalmente pela aplicação web tanto no front-end quanto no back-end do projeto "Gym-Guru" além de auxiliar no desenvolvimento da aplicação mobile',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: screenWidth * 0.035,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -237,9 +296,9 @@ class _PerfilState extends State<Perfil> {
                                   children: [
                                     SizedBox(height: 100),
                                     CircleAvatar(
-                                      radius: 100,
+                                      radius: screenWidth * 0.25,
                                       backgroundImage: AssetImage(
-                                        'images/FotoRay.png',
+                                        'assets/images/FotoRay.png',
                                       ),
                                     ),
                                     SizedBox(height: 50),
@@ -247,14 +306,28 @@ class _PerfilState extends State<Perfil> {
                                       'Ray Anthony',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 45,
+                                        fontSize: screenWidth * 0.07,
                                       ),
                                     ),
                                     Text(
                                       'cl203518@g.unicamp.br',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: screenWidth * 0.04,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: screenWidth * 0.05,
+                                        vertical: 10,
+                                      ),
+                                      child: Text(
+                                        'Técnico em Desenvolvimento de Sistemas pelo COTIL. No projeto, é o desenvolvedor responsável pela API e banco de dados. Além disso, atuou como analista de requisitos e gerente de projeto, assim cuidando da documentação e planejamento.',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: screenWidth * 0.035,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -262,8 +335,7 @@ class _PerfilState extends State<Perfil> {
                               ],
                             ),
                             Positioned(
-                              bottom:
-                                  10,
+                              bottom: 10,
                               left: 0,
                               right: 0,
                               child: DotsIndicator(

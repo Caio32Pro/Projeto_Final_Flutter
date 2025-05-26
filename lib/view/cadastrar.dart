@@ -83,7 +83,7 @@ class _CadastroState extends State<Cadastro> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset('images/iconepng.png', width: screenWidth * 0.5),
+              Image.asset('assets/images/iconepng.png', width: screenWidth * 0.5),
               SizedBox(height: 20),
               SizedBox(height: 20),
               SizedBox(

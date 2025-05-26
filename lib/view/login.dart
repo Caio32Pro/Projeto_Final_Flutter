@@ -103,7 +103,7 @@ class LoginState extends State<Login> {
           child: Column(
             children: [
               SizedBox(height: screenHeight * 0.1),
-              Image.asset('images/iconepng.png', width: screenWidth * 0.5),
+              Image.asset('assets/images/iconepng.png', width: screenWidth * 0.5),
               SizedBox(height: 20),
               Text(
                 'Login',

@@ -64,7 +64,7 @@ class _SobreState extends State<Sobre> {
                   Padding(padding: EdgeInsets.only(left: 16, right: 16),
                     child: Row(
                       children: [
-                        Image.asset('images/FotoWeb.png', width: 200,),
+                        Image.asset('assets/images/FotoWeb.png', width: 200,),
                         SizedBox(width: 20,),
                         SizedBox(
                           child: Text(
@@ -106,7 +106,7 @@ class _SobreState extends State<Sobre> {
                           ),
                         ),
                         SizedBox(width: 20,),
-                        Image.asset('images/FotoWeb.png', width: 200,),
+                        Image.asset('assets/images/FotoWeb.png', width: 200,),
                       ]
                     ),
                   ),
@@ -122,7 +122,7 @@ class _SobreState extends State<Sobre> {
                   Padding(padding: EdgeInsets.only(left: 16, right: 16),
                     child: Row(
                       children: [
-                        Image.asset('images/FotoWeb.png', width: 200,),
+                        Image.asset('assets/images/FotoWeb.png', width: 200,),
                         SizedBox(width: 20,),
                         SizedBox(
                           child: Text(

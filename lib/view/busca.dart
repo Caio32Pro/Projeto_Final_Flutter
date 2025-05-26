@@ -211,7 +211,7 @@ class _TreinoState extends State<Treino> {
                 controller: searchController,
                 decoration: InputDecoration(
                   prefixIcon: Icon(Icons.search, color: Colors.white),
-                  hintText: 'Digite o nome do aparelho',
+                  hintText: 'Digite o nome/código do aparelho',
                   hintStyle: TextStyle(color: Colors.white70),
                   labelText: 'Buscar Aparelho',
                   labelStyle: TextStyle(color: Colors.white),

@@ -100,7 +100,7 @@ class _HomepageState extends State<Homepage> {
           children: [
             Opacity(
               opacity: 0.58,
-              child: Image.asset('images/icone2png.png', width: 350,),
+              child: Image.asset('assets/images/icone2png.png', width: 350,),
               ),
           ],
         ),
