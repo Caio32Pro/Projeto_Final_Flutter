@@ -40,6 +40,9 @@ flutter:
     - assets/images/FotoRay.png
     - assets/images/FotoDanilo.png
     - assets/images/FotoWeb.png
+    - assets/images/Mobile.png
+    - assets/images/MobileCortado.png
+    - assets/images/FotoDesktop.png
   fonts:
     - family: BreeSerif
       fonts:

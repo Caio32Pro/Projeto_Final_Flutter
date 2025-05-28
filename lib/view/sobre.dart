@@ -64,7 +64,13 @@ class _SobreState extends State<Sobre> {
                   Padding(padding: EdgeInsets.only(left: 16, right: 16),
                     child: Row(
                       children: [
-                        Image.asset('assets/images/FotoWeb.png', width: 200,),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Image.asset('assets/images/FotoWeb.png', width: 200,),
+                        ),
                         SizedBox(width: 20,),
                         SizedBox(
                           child: Text(
@@ -106,7 +112,13 @@ class _SobreState extends State<Sobre> {
                           ),
                         ),
                         SizedBox(width: 20,),
-                        Image.asset('assets/images/FotoWeb.png', width: 200,),
+                        Container(
+                          decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black, width: 1),
+                          borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Image.asset('images/FotoDesktop.png', width: 200,),
+                        ),
                       ]
                     ),
                   ),
@@ -122,7 +134,13 @@ class _SobreState extends State<Sobre> {
                   Padding(padding: EdgeInsets.only(left: 16, right: 16),
                     child: Row(
                       children: [
-                        Image.asset('assets/images/FotoWeb.png', width: 200,),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Image.asset('assets/images/Mobile.png', width: 200,),
+                        ),
                         SizedBox(width: 20,),
                         SizedBox(
                           child: Text(
